@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { getAssetPath } from '../utils/assetPath';
 
 interface SEOProps {
   title?: string;
@@ -30,13 +31,15 @@ const SEO = React.memo<SEOProps>(({
 }) => {
   const fullTitle = title.includes("ACRIL") ? title : `${title} | ACRIL Pinturas`;
   const canonicalUrl = `${url}${section ? `/#${section}` : ''}`;
+  const fullImageUrl = image.startsWith('http') ? image : `${url}${getAssetPath(image)}`;
+  const logoUrl = `${url}${getAssetPath('/logo-modificado.png')}`;
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "ACRIL Pinturas",
     "url": url,
-    "logo": `${url}/logo-modificado.png`,
+    "logo": logoUrl,
     "description": description,
     "address": {
       "@type": "PostalAddress",
@@ -69,7 +72,7 @@ const SEO = React.memo<SEOProps>(({
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={`${url}${image}`} />
+      <meta property="og:image" content={fullImageUrl} />
       <meta property="og:site_name" content="ACRIL Pinturas" />
 
       {/* Twitter */}
@@ -77,7 +80,7 @@ const SEO = React.memo<SEOProps>(({
       <meta property="twitter:url" content={canonicalUrl} />
       <meta property="twitter:title" content={fullTitle} />
       <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={`${url}${image}`} />
+      <meta property="twitter:image" content={fullImageUrl} />
 
       {/* Canonical URL */}
       <link rel="canonical" href={canonicalUrl} />

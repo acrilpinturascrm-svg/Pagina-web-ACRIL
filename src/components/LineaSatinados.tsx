@@ -5,6 +5,7 @@ import { ACRIL_COLORS } from '../constants/brandColors';
 import type { Product, Color } from '../types';
 import PDFViewer from './PDFViewer';
 import { getPdfViewerConfig, getPdfUrl } from '../utils/pdfUtils';
+import { getAssetPath } from '../utils/assetPath';
 
 const normalize = (str: string) =>
   str
@@ -34,7 +35,7 @@ const buildSatinadosCandidates = (productName: string) => {
       `${alias} GALON.png`
     );
   }
-  return variants.map(v => basePath + v);
+  return variants.map(v => getAssetPath(basePath + v));
 };
 
 const LineaSatinados = () => {

@@ -5,6 +5,7 @@ import { ACRIL_COLORS } from '../constants/brandColors';
 import type { Product, Color } from '../types';
 import PDFViewer from './PDFViewer';
 import { getPdfViewerConfig, getPdfUrl } from '../utils/pdfUtils';
+import { getAssetPath } from '../utils/assetPath';
 
 const normalize = (str: string) =>
   str
@@ -42,7 +43,7 @@ const buildSolventeCandidates = (productName: string) => {
   for (const nb of nameBases) {
     for (const ext of exts) variants.push(nb + ext);
   }
-  return variants.map(v => basePath + v);
+  return variants.map(v => getAssetPath(basePath + v));
 };
 
 const LineaSolvente = () => {

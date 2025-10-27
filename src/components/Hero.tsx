@@ -1,5 +1,6 @@
 import { CheckCircle } from 'lucide-react';
 import { ACRIL_COLORS } from '../constants/brandColors';
+import { getAssetPath } from '../utils/assetPath';
 
 const Hero = () => {
   return (
@@ -45,7 +46,7 @@ const Hero = () => {
           <div className="relative">
             <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <img 
-                src="/images/hero/Impecril 3.jpg"
+                src={getAssetPath('/images/hero/Impecril 3.jpg')}
                 alt="Aplicación de impermeabilizante en techo"
                 className="w-full h-[28rem] object-contain object-center rounded-lg shadow-2xl bg-white"
               />

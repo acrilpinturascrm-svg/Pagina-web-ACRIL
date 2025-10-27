@@ -5,6 +5,7 @@ import SearchBar from './SearchBar';
 import type { HeaderProps } from '../types';
 import { ACRIL_COLORS } from '../constants/brandColors';
 import { NAVIGATION_SECTIONS } from '../constants/navigation';
+import { getAssetPath } from '../utils/assetPath';
 
 const Header: React.FC<HeaderProps> = ({ onSectionChange, activeSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ onSectionChange, activeSection }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            <img src="/logo-modificado.png" alt="ACRIL Pinturas Logo" className="h-8 w-auto" />
+            <img src={getAssetPath('/logo-modificado.png')} alt="ACRIL Pinturas Logo" className="h-8 w-auto" />
           </div>
 
           {/* Search Bar - Desktop */}

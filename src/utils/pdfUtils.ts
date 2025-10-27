@@ -1,3 +1,5 @@
+import { getAssetPath } from './assetPath';
+
 // Mapeo de nombres de productos a nombres de archivo PDF
 export const getPdfUrl = (productName: string): string => {
   // Mapeo de nombres de productos a nombres de archivo
@@ -38,7 +40,7 @@ export const getPdfUrl = (productName: string): string => {
 
   // Usar el nombre mapeado si existe, de lo contrario normalizar el nombre
   const fileName = productNameMap[productName] || normalizeName(productName);
-  return `/fichas-tecnicas/${fileName}.pdf`;
+  return getAssetPath(`/fichas-tecnicas/${fileName}.pdf`);
 };
 
 // Función para abrir la ficha técnica en una nueva pestaña

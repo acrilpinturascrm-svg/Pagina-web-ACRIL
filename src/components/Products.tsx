@@ -4,6 +4,7 @@ import { PRODUCT_LINES } from '../constants/colors';
 import type { ProductLine, Product } from '../types';
 import { openPdfInNewTab } from '../utils/pdfUtils';
 import { ACRIL_COLORS } from '../constants/brandColors';
+import { getAssetPath } from '../utils/assetPath';
 
 const normalize = (str: string) =>
   str
@@ -42,7 +43,7 @@ const buildProductImageCandidates = (lineName: string, productName: string) => {
     `${firstTokenUpper} G.png`,
   ];
 
-  return variants.map(v => basePath + v);
+  return variants.map(v => getAssetPath(basePath + v));
 };
 
 const Products = () => {
