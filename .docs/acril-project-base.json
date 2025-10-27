@@ -1,0 +1,441 @@
+{
+  "project": {
+    "name": "ACRIL Pinturas",
+    "description": "Sitio web corporativo para empresa de pinturas profesionales en Venezuela",
+    "domain": "https://www.acril.com.ve",
+    "version": "1.0.0",
+    "technology_stack": {
+      "frontend": "React 18.3.1",
+      "build_tool": "Vite 5.4.2",
+      "language": "TypeScript",
+      "styling": "Tailwind CSS 3.4.1",
+      "email_service": "EmailJS 4.4.1",
+      "icons": "Lucide React 0.344.0",
+      "lazy_loading": "React Lazy Load Image Component 1.6.3"
+    }
+  },
+  "company_info": {
+    "name": "ACRIL Pinturas",
+    "slogan": "Transformando espacios con color y calidad",
+    "established": "2008",
+    "experience_years": "15+",
+    "projects_completed": "500+",
+    "location": {
+      "address": "Av. Henry Ford, Centro Comercial Boulevard Industrial Municipal, Local A8",
+      "city": "Valencia",
+      "state": "Carabobo",
+      "country": "Venezuela",
+      "coordinates": {
+        "latitude": "10.19219",
+        "longitude": "-67.96272"
+      },
+      "reference": "Al lado de la Alcaldía de Valencia, IAMVIAL"
+    },
+    "contact": {
+      "phones": ["+58 4244597443", "+58 4222274500"],
+      "emails": ["acrilpinturas@gmail.com", "acrilpinturascrm@gmail.com"],
+      "whatsapp": "584244597443",
+      "schedule": "Lunes a Viernes: 08:30 - 16:30"
+    },
+    "social_media": {
+      "facebook": "https://www.facebook.com/PinturasAcril/",
+      "instagram": "https://www.instagram.com/acrilpinturas/",
+      "tiktok": "https://www.tiktok.com/@acrilpinturas?lang=en"
+    }
+  },
+  "brand_colors": {
+    "primary": {
+      "name": "Rojo Sangre (Blood Red)",
+      "values": {
+        "500": "#ef4444",
+        "600": "#dc2626",
+        "700": "#b91c1c",
+        "800": "#991b1b"
+      }
+    },
+    "secondary": {
+      "name": "Amarillo Pollito (Chick Yellow)",
+      "values": {
+        "400": "#facc15",
+        "500": "#eab308"
+      }
+    },
+    "neutral": {
+      "name": "Blanco Normal (Normal White)",
+      "value": "#ffffff"
+    }
+  },
+  "product_lines": [
+    {
+      "id": "linea-elastomerica",
+      "name": "Línea Elastomérica",
+      "description": "Pinturas elastoméricas de alta resistencia para impermeabilización y protección",
+      "icon": "🔴",
+      "color_theme": "red",
+      "products": [
+        {
+          "name": "IMPECRIL",
+          "description": "Impermeabilizante elastomérico de alta calidad",
+          "colors_count": 4,
+          "colors": [
+            {"name": "Rojo", "hex": "#7e4235"},
+            {"name": "Verde", "hex": "#374f3d"},
+            {"name": "Blanco", "hex": "#ffffff"},
+            {"name": "Gris", "hex": "#606263"}
+          ],
+          "applications": ["Techos", "Terrazas", "Fachadas", "Superficies expuestas"],
+          "features": ["Impermeabilizante", "Alta elasticidad", "Resistente a UV", "Larga durabilidad"]
+        },
+        {
+          "name": "DECOCRIL Elastomérico",
+          "description": "Pintura elastomérica decorativa con acabado profesional",
+          "colors_count": 32,
+          "applications": ["Fachadas", "Muros exteriores", "Superficies decorativas"],
+          "features": ["Decorativo", "Elastomérico", "Resistente al clima", "Amplia gama de colores"]
+        },
+        {
+          "name": "DEPOCRIL",
+          "description": "Pintura elastomérica especializada para canchas deportivas",
+          "colors_count": 7,
+          "applications": ["Canchas deportivas", "Áreas recreativas", "Pisos deportivos"],
+          "features": ["Alto tráfico", "Antideslizante", "Resistente al desgaste", "Colores vivos"]
+        },
+        {
+          "name": "TRAFICRIL Elastomérico",
+          "description": "Pintura elastomérica para señalización y tráfico",
+          "colors_count": 5,
+          "applications": ["Señalización vial", "Estacionamientos", "Zonas de tráfico"],
+          "features": ["Alta visibilidad", "Secado rápido", "Resistente al tráfico", "Durable"]
+        }
+      ],
+      "total_colors": 48
+    },
+    {
+      "id": "linea-caucho",
+      "name": "Línea de Caucho Mate",
+      "description": "Pinturas de caucho con acabado mate para interiores y exteriores",
+      "icon": "🟠",
+      "color_theme": "orange",
+      "products": [
+        {
+          "name": "DECOCRIL Caucho",
+          "description": "Pintura de caucho mate decorativa de alta calidad",
+          "colors_count": 32,
+          "applications": ["Interiores", "Exteriores", "Muros", "Cielos rasos"],
+          "features": ["Acabado mate", "Lavable", "Cubriente", "Fácil aplicación"]
+        }
+      ],
+      "total_colors": 32
+    },
+    {
+      "id": "linea-satinados",
+      "name": "Línea de Satinados",
+      "description": "Pinturas con acabado satinado elegante y duradero",
+      "icon": "🟣",
+      "color_theme": "purple",
+      "products": [
+        {
+          "name": "SEDACRIL",
+          "description": "Pintura satinada de alta calidad con brillo de seda",
+          "colors_count": 24,
+          "applications": ["Interiores", "Áreas de alto tráfico", "Oficinas", "Comercios"],
+          "features": ["Brillo satinado", "Lavable", "Resistente", "Elegante"]
+        }
+      ],
+      "total_colors": 24
+    },
+    {
+      "id": "linea-solvente",
+      "name": "Línea de Solvente",
+      "description": "Pinturas base solvente para uso industrial y alto tráfico",
+      "icon": "🟢",
+      "color_theme": "green",
+      "products": [
+        {
+          "name": "ESMACRIL",
+          "description": "Esmalte sintético de solvente para uso general",
+          "colors_count": 21,
+          "applications": ["Superficies metálicas", "Madera", "Concreto", "Industrial"],
+          "features": ["Alta resistencia", "Acabado brillante", "Secado rápido", "Durable"]
+        },
+        {
+          "name": "ESMACRIL Piscinas",
+          "description": "Esmalte especial para piscinas y áreas húmedas",
+          "colors_count": 4,
+          "applications": ["Piscinas", "Tanques de agua", "Áreas húmedas"],
+          "features": ["Resistente al agua", "Resistente al cloro", "No tóxico", "Durable"]
+        },
+        {
+          "name": "TRAFICRIL Alto Tráfico",
+          "description": "Pintura para zonas de alto tráfico vehicular y peatonal",
+          "colors_count": 5,
+          "applications": ["Estacionamientos", "Vías", "Señalización", "Pisos industriales"],
+          "features": ["Máxima resistencia", "Secado rápido", "Alta visibilidad", "Antideslizante"]
+        },
+        {
+          "name": "HIERROCRIL",
+          "description": "Pintura anticorrosiva para estructuras metálicas",
+          "colors_count": 3,
+          "applications": ["Estructuras metálicas", "Rejas", "Portones", "Maquinaria"],
+          "features": ["Anticorrosivo", "Protección total", "Larga durabilidad", "Resistente"]
+        }
+      ],
+      "total_colors": 33
+    },
+    {
+      "id": "linea-tratamientos",
+      "name": "Línea de Tratamientos",
+      "description": "Productos especializados para preparación y tratamiento de superficies",
+      "icon": "🔵",
+      "color_theme": "indigo",
+      "products": [
+        {
+          "name": "Base Antialcalino",
+          "description": "Base neutralizadora de alcalinidad para superficies nuevas",
+          "colors_count": 1,
+          "applications": ["Concreto nuevo", "Frisos", "Superficies alcalinas"],
+          "features": ["Neutraliza pH", "Mejora adherencia", "Previene eflorescencia", "Fácil aplicación"]
+        },
+        {
+          "name": "DOXICRIL",
+          "description": "Sellador y endurecedor de superficies porosas",
+          "colors_count": 1,
+          "applications": ["Superficies porosas", "Frisos", "Concreto", "Bloques"],
+          "features": ["Sella poros", "Endurece superficie", "Reduce absorción", "Base ideal"]
+        },
+        {
+          "name": "PASTACRIL",
+          "description": "Pasta niveladora y reparadora de superficies",
+          "colors_count": 1,
+          "applications": ["Reparación de grietas", "Nivelación", "Imperfecciones", "Acabados"],
+          "features": ["Fácil lijado", "Alta adherencia", "No se agrieta", "Versátil"]
+        },
+        {
+          "name": "SELLACRIL",
+          "description": "Sellador de poros y fisuras para acabados perfectos",
+          "colors_count": 1,
+          "applications": ["Poros", "Fisuras", "Preparación de superficies", "Acabados finos"],
+          "features": ["Sella perfectamente", "Transparente", "Rápido secado", "Profesional"]
+        }
+      ],
+      "total_colors": 4
+    }
+  ],
+  "statistics": {
+    "total_product_lines": 5,
+    "total_products": 13,
+    "total_colors": 141,
+    "total_pdfs": 13,
+    "experience_years": 15,
+    "projects_completed": 500
+  },
+  "services": [
+    {
+      "name": "Impermeabilizantes",
+      "description": "Transforma tu hogar con acabados de primera calidad. Interior y exterior.",
+      "features": ["Preparación de superficies", "Pinturas ecológicas", "Acabados especiales"],
+      "icon": "Home"
+    },
+    {
+      "name": "Decorativa",
+      "description": "Proyecta la imagen profesional que tu negocio necesita.",
+      "features": ["Alto tráfico", "Colores corporativos", "Tiempos ajustados"],
+      "icon": "Building"
+    },
+    {
+      "name": "Industrial",
+      "description": "Protección y durabilidad para instalaciones industriales.",
+      "features": ["Anticorrosivos", "Altas temperaturas", "Ambientes químicos"],
+      "icon": "Factory"
+    }
+  ],
+  "value_propositions": [
+    {
+      "title": "Garantía Extendida",
+      "description": "Hasta 3 años en materiales",
+      "icon": "Shield"
+    },
+    {
+      "title": "Entrega Puntual",
+      "description": "Cumplimos con los tiempos",
+      "icon": "Clock"
+    },
+    {
+      "title": "Asesoría en Color",
+      "description": "Te ayudamos a elegir",
+      "icon": "Palette"
+    }
+  ],
+  "website_sections": [
+    {
+      "id": "inicio",
+      "name": "Inicio",
+      "route": "#inicio",
+      "components": ["Hero", "Services", "Gallery", "About", "Testimonials", "Contact"]
+    },
+    {
+      "id": "servicios",
+      "name": "Servicios",
+      "route": "#servicios",
+      "components": ["Services"]
+    },
+    {
+      "id": "productos",
+      "name": "Productos",
+      "route": "#productos",
+      "components": ["Products"]
+    },
+    {
+      "id": "galeria",
+      "name": "Galería",
+      "route": "#galeria",
+      "components": ["Gallery"]
+    },
+    {
+      "id": "sobre",
+      "name": "Sobre Nosotros",
+      "route": "#sobre",
+      "components": ["About"]
+    },
+    {
+      "id": "testimonios",
+      "name": "Testimonios",
+      "route": "#testimonios",
+      "components": ["Testimonials"]
+    },
+    {
+      "id": "contacto",
+      "name": "Contacto",
+      "route": "#contacto",
+      "components": ["Contact"]
+    }
+  ],
+  "technical_features": {
+    "architecture": "Single Page Application (SPA)",
+    "routing": "Section-based navigation with custom events",
+    "lazy_loading": "React.lazy() for code splitting",
+    "error_handling": "Error Boundaries for component failures",
+    "seo": {
+      "dynamic_meta_tags": true,
+      "structured_data": true,
+      "sitemap": true,
+      "robots_txt": true,
+      "canonical_urls": true
+    },
+    "performance": {
+      "code_splitting": true,
+      "lazy_loading": true,
+      "image_optimization": true,
+      "minification": "Terser",
+      "bundle_optimization": true
+    },
+    "pwa": {
+      "manifest": true,
+      "service_worker": false,
+      "offline_support": false
+    }
+  },
+  "file_structure": {
+    "src": {
+      "components": [
+        "About.tsx",
+        "Contact.tsx",
+        "ErrorBoundary.tsx",
+        "Footer.tsx",
+        "Gallery.tsx",
+        "Header.tsx",
+        "HeaderWithSearch.tsx",
+        "Hero.tsx",
+        "ImageWithFallback.tsx",
+        "LazyImage.tsx",
+        "LineaCaucho.tsx",
+        "LineaElastomerica.tsx",
+        "LineaSatinados.tsx",
+        "LineaSolvente.tsx",
+        "LineaTratamientos.tsx",
+        "PDFViewer.tsx",
+        "Products.tsx",
+        "ProductsDropdown.tsx",
+        "SEO.tsx",
+        "SEOSection.tsx",
+        "SearchBar.tsx",
+        "Services.tsx",
+        "Testimonials.tsx"
+      ],
+      "constants": [
+        "brandColors.ts",
+        "colors.ts",
+        "surfaces.ts"
+      ],
+      "types": [
+        "index.ts"
+      ]
+    },
+    "public": {
+      "images": {
+        "products": ["elastomerica/", "caucho/", "satinados/", "solvente/", "tratamientos/"],
+        "surfaces": ["impecril/"]
+      },
+      "fichas-tecnicas": "13 PDFs"
+    }
+  },
+  "dependencies": {
+    "production": {
+      "@emailjs/browser": "^4.4.1",
+      "lucide-react": "^0.344.0",
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1",
+      "react-helmet-async": "^2.0.5",
+      "react-lazy-load-image-component": "^1.6.3",
+      "yup": "^1.7.0"
+    },
+    "development": {
+      "@vitejs/plugin-react": "^4.3.1",
+      "autoprefixer": "^10.4.18",
+      "postcss": "^8.4.35",
+      "tailwindcss": "^3.4.1",
+      "terser": "^5.44.0",
+      "typescript": "^5.5.3",
+      "vite": "^5.4.2",
+      "vitest": "^3.2.4"
+    }
+  },
+  "deployment": {
+    "current_platform": "Netlify",
+    "production_domain": "www.acril.com.ve",
+    "build_command": "npm run build",
+    "output_directory": "dist",
+    "node_version": "18.x"
+  },
+  "replication_guide": {
+    "steps": [
+      "1. Clonar estructura de carpetas según file_structure",
+      "2. Instalar dependencias: npm install",
+      "3. Configurar variables de entorno (.env): EmailJS credentials, WhatsApp number",
+      "4. Copiar archivos públicos: logo, imágenes de productos, fichas técnicas PDF",
+      "5. Configurar colores de marca en src/constants/brandColors.ts",
+      "6. Configurar productos y colores en src/constants/colors.ts",
+      "7. Personalizar información de contacto en components/Footer.tsx y Contact.tsx",
+      "8. Actualizar SEO en index.html y src/components/SEO.tsx",
+      "9. Configurar dominio en todos los archivos de SEO",
+      "10. Build y deploy: npm run build"
+    ],
+    "required_customizations": [
+      "Company information (name, address, phones, emails)",
+      "Brand colors",
+      "Product lines and colors",
+      "Social media links",
+      "EmailJS credentials",
+      "Domain name",
+      "Logo and images",
+      "PDF technical sheets"
+    ]
+  },
+  "notes": {
+    "color_simulator": "Removed by product decision - navigation and code removed",
+    "image_strategy": "Flexible image loading with multiple candidate filenames and fallback",
+    "pdf_system": "13 PDFs configured with automatic download functionality",
+    "seo_optimization": "Complete SEO implementation with dynamic meta tags and structured data",
+    "production_ready": "100% functional and production-ready with clean code"
+  }
+}

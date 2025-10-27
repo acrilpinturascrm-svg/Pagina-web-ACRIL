@@ -1,0 +1,16 @@
+# Redirects para Netlify
+# Documentación: https://docs.netlify.com/routing/redirects/
+
+# Redirigir HTTP a HTTPS
+http://acril.com.ve/* https://www.acril.com.ve/:splat 301!
+http://www.acril.com.ve/* https://www.acril.com.ve/:splat 301!
+
+# Redirigir dominio sin www a www
+https://acril.com.ve/* https://www.acril.com.ve/:splat 301!
+
+# Redirigir URLs antiguas si las hubiera
+/simulador-colores /  301
+/color-simulator /  301
+
+# SPA fallback - todas las rutas van al index.html
+/*    /index.html   200

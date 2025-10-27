@@ -1,0 +1,40 @@
+# Headers de seguridad y performance para Netlify
+# Documentación: https://docs.netlify.com/routing/headers/
+
+/*
+  # Seguridad
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  
+  # Content Security Policy
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.emailjs.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: http:; connect-src 'self' https://api.emailjs.com https://www.google-analytics.com; frame-src 'self'
+  
+  # Cache Control
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache específico para HTML (no cachear)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Cache para assets estáticos
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache para imágenes
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache para PDFs
+/fichas-tecnicas/*
+  Cache-Control: public, max-age=2592000
+
+# Cache para logo
+/logo-modificado.png
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache para manifest
+/manifest.json
+  Cache-Control: public, max-age=604800
