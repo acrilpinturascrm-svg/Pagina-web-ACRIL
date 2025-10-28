@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="text-white" style={{ backgroundColor: ACRIL_COLORS.bloodRed600 }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-12 grid md:grid-cols-4 gap-8">
+        <div className="py-8 sm:py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {/* Logo y descripción */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
@@ -66,15 +66,19 @@ const Footer = () => {
                 <MapPin className="h-4 w-4 flex-shrink-0" />
                 <span className="text-sm">Av. Henry Ford, Centro Comercial Boulevard Industrial Municipal, Local A8, punto de referencia al lado de la Alcaldía de Valencia, IAMVIAL - Carabobo</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 flex-shrink-0" />
-                <span className="text-sm">+58 4244597443</span>
-                <span className="text-sm">+58 4222274500</span>
+              <div className="flex items-start space-x-2">
+                <Phone className="h-4 w-4 flex-shrink-0 mt-1" />
+                <div className="flex flex-col space-y-1">
+                  <span className="text-sm">+58 4244597443</span>
+                  <span className="text-sm">+58 4222274500</span>
+                </div>
               </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 flex-shrink-0" />
-                <span className="text-sm">acrilpinturas@gmail.com</span>
-                <span className="text-sm">acrilpinturascrm@gmail.com</span>
+              <div className="flex items-start space-x-2">
+                <Mail className="h-4 w-4 flex-shrink-0 mt-1" />
+                <div className="flex flex-col space-y-1">
+                  <span className="text-sm break-all">acrilpinturas@gmail.com</span>
+                  <span className="text-sm break-all">acrilpinturascrm@gmail.com</span>
+                </div>
               </div>
             </div>
           </div>
