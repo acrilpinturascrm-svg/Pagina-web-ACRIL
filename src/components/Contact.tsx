@@ -3,6 +3,7 @@ import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import * as yup from 'yup';
 import { ACRIL_COLORS } from '../constants/brandColors';
+import { EMAILJS_CONFIG, isEmailJSConfigured } from '../config/emailjs.config';
 
 // Esquema de validación
 const validationSchema = yup.object({
@@ -53,13 +54,9 @@ const Contact = () => {
       // Validar datos del formulario
       await validationSchema.validate(formData, { abortEarly: false });
 
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-      // Validar que las variables de entorno estén configuradas
-      if (!serviceId || !templateId || !publicKey) {
-        alert('Error de configuración: Las credenciales de EmailJS no están configuradas correctamente.');
+      // Validar que EmailJS esté configurado
+      if (!isEmailJSConfigured()) {
+        alert('Error de configuración: El servicio de email no está disponible. Por favor, contacta por WhatsApp.');
         return;
       }
 
@@ -72,7 +69,13 @@ const Contact = () => {
         message: formData.message.trim()
       };
 
-      await emailjs.send(serviceId, templateId, sanitizedData as Record<string, unknown>, publicKey);
+      // Enviar email usando la configuración centralizada
+      await emailjs.send(
+        EMAILJS_CONFIG.serviceId,
+        EMAILJS_CONFIG.templateId,
+        sanitizedData as Record<string, unknown>,
+        EMAILJS_CONFIG.publicKey
+      );
       
       alert('¡Gracias! Tu mensaje ha sido enviado. Nos pondremos en contacto contigo pronto.');
       setFormData({
