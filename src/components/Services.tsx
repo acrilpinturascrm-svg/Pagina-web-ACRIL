@@ -6,19 +6,19 @@ const Services = () => {
     {
       icon: Home,
       title: 'Impermeabilizantes',
-      description: 'Transforma tu hogar con acabados de primera calidad. Interior y exterior.',
+      description: 'Protege techos con una membrana flexible que sella grietas, resiste a agua, rayos UV y cambios extremos de temperatura.',
       features: ['Preparación de superficies', 'Pinturas ecológicas', 'Acabados especiales']
     },
     {
       icon: Building,
       title: 'Decorativa',
-      description: 'Proyecta la imagen profesional que tu negocio necesita.',
+      description: 'Protege techos con una membrana flexible que sella grietas, resiste a agua, rayos UV y cambios extremos de temperatura.',
       features: ['Alto tráfico', 'Colores corporativos', 'Tiempos ajustados']
     },
     {
       icon: Factory,
       title: 'Industrial',
-      description: 'Protección y durabilidad para instalaciones industriales.',
+      description: 'Protección, señalización y sellado para instalaciones industriales.',
       features: ['Anticorrosivos', 'Altas temperaturas', 'Ambientes químicos']
     }
   ];
