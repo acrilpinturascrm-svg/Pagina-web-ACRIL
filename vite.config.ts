@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Pagina-web-ACRIL/',
+  base: '/', // Dominio personalizado - no usar subdirectorio
   plugins: [react()],
   optimizeDeps: {
     include: ['react', 'react-dom']
