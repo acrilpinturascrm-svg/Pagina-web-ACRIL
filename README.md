@@ -2,13 +2,12 @@
 
 Sitio web desarrollado con Vite + React + TypeScript para ACRIL Pinturas, empresa especializada en pinturas y recubrimientos industriales en Valencia, Venezuela.
 
-## 📚 Documentación
+## 📚 Documentación Actualizada
 
-Toda la documentación técnica del proyecto se encuentra en la carpeta **[`.docs/`](.docs/README.md)**:
-- 🚀 Guías de despliegue
-- ✅ Checklists de producción
-- 🔍 Estrategia SEO
-- 📝 Documentación técnica
+- **[ESTADO_PROYECTO.md](./ESTADO_PROYECTO.md)** - Estado actual completo del proyecto (LEER PRIMERO)
+- **[AI_INSTRUCTIONS.md](./AI_INSTRUCTIONS.md)** - Instrucciones para AI/Desarrolladores
+- **[docs/](./docs/)** - Documentación técnica adicional
+
 
 ## 🚀 Estado Actual del Proyecto (24 de Octubre 2025)
 

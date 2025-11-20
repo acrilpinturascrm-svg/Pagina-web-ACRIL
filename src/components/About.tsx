@@ -24,7 +24,7 @@ const About = () => {
             
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
               Desde 2008, hemos sido la empresa de confianza para familias y empresas 
-              en Valencia, Carabobo. Nuestro compromiso con la calidad y la satisfacción 
+              en Venezuela. Nuestro compromiso con la calidad y la satisfacción 
               del cliente nos ha convertido en líderes del sector
             </p>
 
@@ -37,8 +37,8 @@ const About = () => {
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Equipo Especializado</h4>
                   <p className="text-gray-200">
-                    Nuestros pintores son artesanos con años de experiencia y certificaciones 
-                    en las mejores técnicas de aplicación.
+                    Nuestros personal cuenta con más de 30 años de experiencia en la fabricación de pinturas, 
+                   lo que garantiza la calidad de nuestros productos.
                   </p>
                 </div>
               </div>
@@ -51,8 +51,8 @@ const About = () => {
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Materiales Premium</h4>
                   <p className="text-gray-200">
-                    Trabajamos exclusivamente con marcas reconocidas que garantizan 
-                    durabilidad y acabados excepcionales.
+                    Fabricamos con materias primas tanto nacionales como internacionales
+                    de alta calidad.
                   </p>
                 </div>
               </div>
@@ -76,7 +76,7 @@ const About = () => {
           <div className="relative">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <LazyImage
-                src="/oficinia-acril.jpg"
+                src="/oficina-acril.jpg"
                 alt="Oficina ACRIL - Equipo de trabajo profesional"
                 className="w-full h-72 object-cover rounded-lg shadow-2xl"
                 width={525}

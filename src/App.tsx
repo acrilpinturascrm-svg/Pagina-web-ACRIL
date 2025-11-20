@@ -9,11 +9,7 @@ import { ACRIL_COLORS } from './constants/brandColors';
 
 // Lazy loading para componentes grandes
 const Services = lazy(() => import('./components/Services'));
-// TEMPORALMENTE DESHABILITADO - Gallery (Proyectos)
-// const Gallery = lazy(() => import('./components/Gallery'));
 const About = lazy(() => import('./components/About'));
-// TEMPORALMENTE DESHABILITADO - Testimonios
-// const Testimonials = lazy(() => import('./components/Testimonials'));
 const Contact = lazy(() => import('./components/Contact'));
 const Footer = lazy(() => import('./components/Footer'));
 const Products = lazy(() => import('./components/Products'));
@@ -55,19 +51,9 @@ function App() {
             <Suspense fallback={<div className="flex justify-center items-center h-32"><div className="animate-spin rounded-full h-8 w-8 border-b-2" style={{ borderColor: ACRIL_COLORS.bloodRed600 }}></div></div>}>
               <Services />
             </Suspense>
-            {/* TEMPORALMENTE DESHABILITADO - Gallery (Proyectos)
-            <Suspense fallback={<div className="flex justify-center items-center h-32"><div className="animate-spin rounded-full h-8 w-8 border-b-2" style={{ borderColor: ACRIL_COLORS.bloodRed600 }}></div></div>}>
-              <Gallery />
-            </Suspense>
-            */}
             <Suspense fallback={<div className="flex justify-center items-center h-32"><div className="animate-spin rounded-full h-8 w-8 border-b-2" style={{ borderColor: ACRIL_COLORS.bloodRed600 }}></div></div>}>
               <About />
             </Suspense>
-            {/* TEMPORALMENTE DESHABILITADO - Testimonios
-            <Suspense fallback={<div className="flex justify-center items-center h-32"><div className="animate-spin rounded-full h-8 w-8 border-b-2" style={{ borderColor: ACRIL_COLORS.bloodRed600 }}></div></div>}>
-              <Testimonials />
-            </Suspense>
-            */}
             <Suspense fallback={<div className="flex justify-center items-center h-32"><div className="animate-spin rounded-full h-8 w-8 border-b-2" style={{ borderColor: ACRIL_COLORS.bloodRed600 }}></div></div>}>
               <Contact />
             </Suspense>
@@ -78,25 +64,11 @@ function App() {
             <Services />
           </Suspense>
         )}
-        {/* TEMPORALMENTE DESHABILITADO - Sección Gallery (Proyectos)
-        {activeSection === "galeria" && (
-          <Suspense fallback={<div className="flex justify-center items-center h-32"><div className="animate-spin rounded-full h-8 w-8 border-b-2" style={{ borderColor: ACRIL_COLORS.bloodRed600 }}></div></div>}>
-            <Gallery />
-          </Suspense>
-        )}
-        */}
         {activeSection === "sobre" && (
           <Suspense fallback={<div className="flex justify-center items-center h-32"><div className="animate-spin rounded-full h-8 w-8 border-b-2" style={{ borderColor: ACRIL_COLORS.bloodRed600 }}></div></div>}>
             <About />
           </Suspense>
         )}
-        {/* TEMPORALMENTE DESHABILITADO - Sección Testimonios
-        {activeSection === "testimonios" && (
-          <Suspense fallback={<div className="flex justify-center items-center h-32"><div className="animate-spin rounded-full h-8 w-8 border-b-2" style={{ borderColor: ACRIL_COLORS.bloodRed600 }}></div></div>}>
-            <Testimonials />
-          </Suspense>
-        )}
-        */}
         {activeSection === "contacto" && (
           <Suspense fallback={<div className="flex justify-center items-center h-32"><div className="animate-spin rounded-full h-8 w-8 border-b-2" style={{ borderColor: ACRIL_COLORS.bloodRed600 }}></div></div>}>
             <Contact />

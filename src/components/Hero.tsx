@@ -21,7 +21,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-base sm:text-lg lg:text-xl text-gray-200 mb-6 sm:mb-8 leading-relaxed">
-              Más de 17 años transformando hogares y empresas en Valencia, Carabobo. 
+              Más de 17 años transformando hogares y empresas en nuestro país. 
               Calidad garantizada, precios justos y atención personalizada.
             </p>
 
@@ -44,8 +44,8 @@ const Hero = () => {
           <div className="relative mt-8 lg:mt-0">
             <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-8 border border-white/20">
               <img 
-                src={getAssetPath('/images/hero/Impecril 3.jpg')}
-                alt="Aplicación de impermeabilizante en techo"
+                src={getAssetPath('/images/hero/productos-acril.png')}
+                alt="Línea completa de productos ACRIL - Impermeabilizantes y pinturas"
                 className="w-full h-64 sm:h-80 lg:h-[28rem] object-contain object-center rounded-lg shadow-2xl bg-white"
               />
               <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 bg-white text-red-800 p-3 sm:p-4 rounded-lg shadow-lg">

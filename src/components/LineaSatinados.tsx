@@ -127,13 +127,13 @@ const LineaSatinados = () => {
               return (
               <div key={product.name} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200">
                 {/* Imagen del producto */}
-                <div className="relative w-full h-48 bg-white flex items-center justify-center p-3">
+                <div className="relative w-full h-56 bg-white flex items-center justify-center p-6">
                   <img 
                     src={candidates[0]}
                     data-candidates={candidates.join('|')}
                     data-idx={0}
                     alt={product.name}
-                    className="max-w-full max-h-full object-contain transition-opacity duration-300"
+                    className="max-w-[85%] max-h-[85%] object-contain transition-opacity duration-300"
                     onError={(e) => {
                       const img = e.currentTarget as HTMLImageElement;
                       const list = (img.dataset.candidates || '').split('|').filter(Boolean);

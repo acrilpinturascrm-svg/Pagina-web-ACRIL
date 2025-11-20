@@ -92,7 +92,6 @@ const SearchBar: React.FC = () => {
     setQuery(result.name);
     setIsOpen(false);
     // Aquí podrías navegar a la página del producto
-    console.log('Navegar a producto:', result);
   };
 
   const clearSearch = () => {
