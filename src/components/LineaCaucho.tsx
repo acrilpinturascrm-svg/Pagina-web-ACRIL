@@ -97,8 +97,8 @@ const LineaCaucho = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Características de la Línea de Caucho Mate</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center p-4 rounded-lg" style={{ backgroundColor: ACRIL_COLORS.bloodRed50 }}>
-              <h3 className="font-semibold text-gray-900">Uso Interior</h3>
-              <p className="text-sm text-gray-600">Ideal para espacios interiores</p>
+              <h3 className="font-semibold text-gray-900">Uso Doméstico</h3>
+              <p className="text-sm text-gray-600">Ideal para interior y exterior</p>
             </div>
             <div className="text-center p-4 rounded-lg" style={{ backgroundColor: ACRIL_COLORS.chickYellow50 }}>
               <h3 className="font-semibold text-gray-900">Acabado Mate</h3>

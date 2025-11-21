@@ -12,7 +12,6 @@ const Services = lazy(() => import('./components/Services'));
 const About = lazy(() => import('./components/About'));
 const Contact = lazy(() => import('./components/Contact'));
 const Footer = lazy(() => import('./components/Footer'));
-const Products = lazy(() => import('./components/Products'));
 const LineaElastomerica = lazy(() => import('./components/LineaElastomerica'));
 const LineaCaucho = lazy(() => import('./components/LineaCaucho'));
 const LineaSatinados = lazy(() => import('./components/LineaSatinados'));
@@ -72,34 +71,6 @@ function App() {
         {activeSection === "contacto" && (
           <Suspense fallback={<div className="flex justify-center items-center h-32"><div className="animate-spin rounded-full h-8 w-8 border-b-2" style={{ borderColor: ACRIL_COLORS.bloodRed600 }}></div></div>}>
             <Contact />
-          </Suspense>
-        )}
-        {activeSection === "productos" && (
-          <Suspense fallback={<div className="flex justify-center items-center h-32"><div className="animate-spin rounded-full h-8 w-8 border-b-2" style={{ borderColor: ACRIL_COLORS.bloodRed600 }}></div></div>}>
-            <ErrorBoundary fallback={
-              <div className="min-h-screen flex items-center justify-center bg-gray-50">
-                <div className="text-center p-8">
-                  <div style={{ color: ACRIL_COLORS.bloodRed500 }} className="text-4xl mb-4">📦</div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    Error en la Página de Productos
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    No pudimos cargar los productos. Por favor, recarga la página.
-                  </p>
-                  <button
-                    onClick={() => window.location.reload()}
-                    className="text-white px-6 py-2 rounded-lg hover:bg-red-900"
-                    style={{ backgroundColor: ACRIL_COLORS.bloodRed600 }}
-                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = ACRIL_COLORS.bloodRed700)}
-                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = ACRIL_COLORS.bloodRed600)}
-                  >
-                    Recargar
-                  </button>
-                </div>
-              </div>
-            }>
-              <Products />
-            </ErrorBoundary>
           </Suspense>
         )}
 

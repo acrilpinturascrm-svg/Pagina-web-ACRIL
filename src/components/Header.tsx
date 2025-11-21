@@ -73,7 +73,7 @@ const Header: React.FC<HeaderProps> = ({ onSectionChange, activeSection }) => {
                   'Línea Elastomérica': 'linea-elastomerica',
                   'Línea de Caucho Mate': 'linea-caucho',
                   'Línea de Satinados': 'linea-satinados',
-                  'Línea de Solvente': 'linea-solvente',
+                  'Línea Solvente': 'linea-solvente',
                   'Línea de Tratamientos': 'linea-tratamientos'
                 };
                 const route = lineRoutes[lineName] || 'productos';

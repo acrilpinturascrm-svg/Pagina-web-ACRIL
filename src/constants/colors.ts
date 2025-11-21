@@ -145,7 +145,7 @@ const ESMACRIL_COLORS: ColorBase[] = [
   { name: 'Marfil', value: '#dbb98b' },
   { name: 'Azul Zafiro', value: '#003e5e' },
   { name: 'Azul', value: '#29556d' },
-  { name: 'Azrul Claro', value: '#50aecb' },
+  { name: 'Azul Claro', value: '#50aecb' },
   { name: 'Rojo', value: '#7c241e' },
   { name: 'Naranja', value: '#b85d22' },
   { name: 'Verde', value: '#3a5124' },
@@ -187,22 +187,22 @@ export const PRODUCT_LINES = [
       {
         name: 'IMPECRIL',
         description: 'Impermeabilizante elastomérico',
-        colors: IMPECRIL_COLORS.map(color => ({ ...color, types: ['elastomerico', 'impermeabilizante'] }))
+        colors: IMPECRIL_COLORS.map(color => ({ ...color, types: ['Hidrorepelente', 'Impermeabilizante', 'Elastomerico'] }))
       },
       {
         name: 'DECOCRIL Elastomérico',
         description: 'Pintura elastomérica decorativa',
-        colors: DECOCRIL_ELASTOMERICO_COLORS.map(color => ({ ...color, types: ['elastomerico', 'decorativo'] }))
+        colors: DECOCRIL_ELASTOMERICO_COLORS.map(color => ({ ...color, types: ['Elastomerico', 'Decorativo', 'Interior y Exterior'] }))
       },
       {
         name: 'DEPOCRIL',
         description: 'Pintura elastomérica para canchas deportivas',
-        colors: DEPOCRIL_COLORS.map(color => ({ ...color, types: ['elastomerico', 'Canchas'] }))
+        colors: DEPOCRIL_COLORS.map(color => ({ ...color, types: ['Elastomerico', 'Canchas'] }))
       },
       {
         name: 'TRAFICRIL Elastomérico',
         description: 'Pintura elastomérica para tráfico',
-        colors: TRAFICRIL_ELASTOMERICO_COLORS.map(color => ({ ...color, types: ['elastomerico', 'trafico'] }))
+        colors: TRAFICRIL_ELASTOMERICO_COLORS.map(color => ({ ...color, types: ['Elastomerico', 'Trafico', 'Brocal'] }))
       }
     ]
   },
@@ -213,7 +213,7 @@ export const PRODUCT_LINES = [
       {
         name: 'DECOCRIL Caucho',
         description: 'Pintura de caucho mate decorativa',
-        colors: DECOCRIL_CAUCHO_COLORS.map(color => ({ ...color, types: ['mate', 'caucho'] }))
+        colors: DECOCRIL_CAUCHO_COLORS.map(color => ({ ...color, types: ['Mate', 'Caucho', 'Interior y Exterior'] }))
       }
     ]
   },
@@ -224,7 +224,7 @@ export const PRODUCT_LINES = [
       {
         name: 'SEDACRIL',
         description: 'Pintura satinada de alta calidad',
-        colors: SEDACRIL_COLORS.map(color => ({ ...color, types: ['satinado', 'brillante', 'brillo de seda'] }))
+        colors: SEDACRIL_COLORS.map(color => ({ ...color, types: ['Satinado',  'Brillo de seda', 'Interior y Exterior'] }))
       }
     ]
   },
@@ -234,23 +234,23 @@ export const PRODUCT_LINES = [
     products: [
       {
         name: 'ESMACRIL',
-        description: 'Esmalte sintético de solvente',
-        colors: ESMACRIL_COLORS.map(color => ({ ...color, types: ['esmalte', 'solvente'] }))
+        description: 'Esmalte sintético base solvente',
+        colors: ESMACRIL_COLORS.map(color => ({ ...color, types: ['3 en 1', 'Solvente'] }))
       },
       {
         name: 'ESMACRIL Piscinas',
-        description: 'Esmalte especial para piscinas',
-        colors: ESMACRIL_PISCINAS_COLORS.map(color => ({ ...color, types: ['esmalte', 'piscinas', 'solvente'] }))
+        description: 'Pintura base solvente para piscinas y tanques',
+        colors: ESMACRIL_PISCINAS_COLORS.map(color => ({ ...color, types: ['Tanques', 'Piscinas', 'Solvente'] }))
       },
       {
         name: 'TRAFICRIL Alto Tráfico',
-        description: 'Pintura para zonas de alto tráfico',
-        colors: TRAFICRIL_ALTO_TRAFICO_COLORS.map(color => ({ ...color, types: ['trafico', 'solvente', 'resistente'] }))
+        description: 'Pintura de tráfico base solvente y caucho clorado',
+        colors: TRAFICRIL_ALTO_TRAFICO_COLORS.map(color => ({ ...color, types: ['Pavimento', 'Solvente', 'Caucho Clorado'] }))
       },
       {
         name: 'HIERROCRIL',
-        description: 'Pintura anticorrosiva para hierro',
-        colors: HIERROCRIL_COLORS.map(color => ({ ...color, types: ['anticorrosivo', 'hierro', 'solvente'] }))
+        description: 'Pintura anticorrosiva para metales',
+        colors: HIERROCRIL_COLORS.map(color => ({ ...color, types: ['Anticorrosivo', 'Metales', 'Solvente'] }))
       }
     ]
   },
@@ -259,24 +259,24 @@ export const PRODUCT_LINES = [
     description: 'Productos especializados para tratamiento de superficies',
     products: [
       {
-        name: 'Base Antialcalino',
+        name: 'Antialcalino',
         description: 'Base neutralizadora de alcalinidad',
-        colors: [{ name: 'Transparente', value: '#f8f9fa', types: ['base', 'tratamiento'] }]
+        colors: [{ name: 'Transparente', value: '#f8f9fa', types: ['Base', 'Tratamiento Previo'] }]
       },
       {
         name: 'DOXICRIL',
-        description: 'Sellador y endurecedor de superficies',
-        colors: [{ name: 'Transparente', value: '#f8f9fa', types: ['sellador', 'tratamiento'] }]
+        description: 'Inhibidor de oxido para superficies metálicas',
+        colors: [{ name: 'Transparente', value: '#f8f9fa', types: ['Inhibidor', 'Tratamiento Previo'] }]
       },
       {
         name: 'PASTACRIL',
-        description: 'Pasta niveladora y reparadora',
-        colors: [{ name: 'Blanco', value: '#ffffff', types: ['pasta', 'tratamiento'] }]
+        description: 'Pasta profesional para nivelar y reparar la superficie',
+        colors: [{ name: 'Blanco', value: '#ffffff', types: ['Pasta', 'Tratamiento Previo'] }]
       },
       {
         name: 'SELLACRIL',
         description: 'Sellador de poros y fisuras',
-        colors: [{ name: 'Transparente', value: '#f8f9fa', types: ['sellador', 'tratamiento'] }]
+        colors: [{ name: 'Transparente', value: '#f8f9fa', types: ['Sellador', 'Tratamiento Previo'] }]
       }
     ]
   }

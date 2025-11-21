@@ -105,40 +105,40 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 md:mb-4">
             Contacta con Nosotros
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-2">
             ¿Listo para transformar tu espacio? Solicita tu cotización gratuita 
             y descubre por qué somos la opción preferida en Valencia.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-12">
           {/* Información de contacto */}
-          <div className="space-y-8">
+          <div className="space-y-4 md:space-y-8">
             <div
-              className="rounded-2xl p-8"
+              className="rounded-xl md:rounded-2xl p-4 md:p-8"
               style={{ backgroundColor: ACRIL_COLORS.bloodRed50 }}
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">
                 Información de Contacto
               </h3>
               
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
+              <div className="space-y-4 md:space-y-6">
+                <div className="flex items-start space-x-3 md:space-x-4">
                   <div
-                    className="p-3 rounded-lg"
+                    className="p-2 md:p-3 rounded-lg flex-shrink-0"
                     style={{ backgroundColor: ACRIL_COLORS.bloodRed600 }}
                   >
-                    <MapPin className="h-6 w-6 text-white" />
+                    <MapPin className="h-5 md:h-6 w-5 md:w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Ubicación</h4>
-                    <p className="text-gray-600">
+                    <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Ubicación</h4>
+                    <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
                       Av. Henry Ford, Centro Comercial Boulevard Industrial Municipal<br />
                       Local A8, punto de referencia al lado de la Alcaldía de Valencia, IAMVIAL - Carabobo, Venezuela
                       <a 
@@ -154,61 +154,61 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-3 md:space-x-4">
                   <div
-                    className="p-3 rounded-lg"
+                    className="p-2 md:p-3 rounded-lg flex-shrink-0"
                     style={{ backgroundColor: ACRIL_COLORS.bloodRed600 }}
                   >
-                    <Phone className="h-6 w-6 text-white" />
+                    <Phone className="h-5 md:h-6 w-5 md:w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Teléfono</h4>
-                    <p className="text-gray-600">+58 4244597443</p>
-                    <p className="text-gray-600">+58 4222274500</p>
+                    <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Teléfono</h4>
+                    <p className="text-xs md:text-sm text-gray-600">+58 4244597443</p>
+                    <p className="text-xs md:text-sm text-gray-600">+58 4222274500</p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-3 md:space-x-4">
                   <div
-                    className="p-3 rounded-lg"
+                    className="p-2 md:p-3 rounded-lg flex-shrink-0"
                     style={{ backgroundColor: ACRIL_COLORS.bloodRed600 }}
                   >
-                    <Mail className="h-6 w-6 text-white" />
+                    <Mail className="h-5 md:h-6 w-5 md:w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-600">acrilpinturas@gmail.com</p>
-                    <p className="text-gray-600">acrilpinturascrm@gmail.com</p>
+                    <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Email</h4>
+                    <p className="text-xs md:text-sm text-gray-600">acrilpinturas@gmail.com</p>
+                    <p className="text-xs md:text-sm text-gray-600">acrilpinturascrm@gmail.com</p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-3 md:space-x-4">
                   <div
-                    className="p-3 rounded-lg"
+                    className="p-2 md:p-3 rounded-lg flex-shrink-0"
                     style={{ backgroundColor: ACRIL_COLORS.bloodRed600 }}
                   >
-                    <Clock className="h-6 w-6 text-white" />
+                    <Clock className="h-5 md:h-6 w-5 md:w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Horarios</h4>
-                    <p className="text-gray-600">Lunes a Viernes: 8:30 AM - 4:30 PM</p>
+                    <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Horarios</h4>
+                    <p className="text-xs md:text-sm text-gray-600">Lunes a Viernes: 8:30 AM - 4:30 PM</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div
-              className="rounded-2xl p-8 text-center"
+              className="rounded-xl md:rounded-2xl p-4 md:p-8 text-center"
               style={{ backgroundColor: ACRIL_COLORS.chickYellow100, color: ACRIL_COLORS.bloodRed600 }}
             >
-              <MessageCircle className="h-12 w-12 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">¿Necesitas una Cotización Rápida?</h3>
-              <p className="mb-4">Envíanos un WhatsApp y te respondemos en minutos</p>
+              <MessageCircle className="h-10 md:h-12 w-10 md:w-12 mx-auto mb-2 md:mb-4" />
+              <h3 className="text-base md:text-xl font-bold mb-1 md:mb-2">¿Necesitas una Cotización Rápida?</h3>
+              <p className="mb-3 md:mb-4 text-sm md:text-base">Envíanos un WhatsApp y te respondemos en minutos</p>
               <a 
                 href={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER || '584244597443'}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block bg-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all"
+                className="inline-block bg-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all text-sm md:text-base"
                 style={{ color: ACRIL_COLORS.bloodRed600 }}
               >
                 Chatear por WhatsApp
@@ -217,15 +217,15 @@ const Contact = () => {
           </div>
 
           {/* Formulario de contacto */}
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="bg-white rounded-xl md:rounded-2xl shadow-lg md:shadow-xl p-4 md:p-8">
+            <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">
               Solicita tu Cotización Gratuita
             </h3>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
                     Nombre Completo *
                   </label>
                   <input
@@ -234,7 +234,7 @@ const Contact = () => {
                     required
                     value={formData.name}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 transition-all ${
+                    className={`w-full px-3 md:px-4 py-2 md:py-3 border rounded-lg focus:ring-2 transition-all text-sm md:text-base ${
                       errors.name ? 'border-red-500' : 'border-gray-300'
                     }`}
                     style={{
@@ -257,7 +257,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
                     Teléfono *
                   </label>
                   <input
@@ -266,7 +266,7 @@ const Contact = () => {
                     required
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 transition-all ${
+                    className={`w-full px-3 md:px-4 py-2 md:py-3 border rounded-lg focus:ring-2 transition-all text-sm md:text-base ${
                       errors.phone ? 'border-red-500' : 'border-gray-300'
                     }`}
                     style={{
@@ -290,7 +290,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
                   Email
                 </label>
                 <input
@@ -298,7 +298,7 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 transition-all ${
+                  className={`w-full px-3 md:px-4 py-2 md:py-3 border rounded-lg focus:ring-2 transition-all text-sm md:text-base ${
                     errors.email ? 'border-red-500' : 'border-gray-300'
                   }`}
                   style={{
@@ -321,7 +321,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
                   Tipo de Servicio *
                 </label>
                 <select
@@ -329,7 +329,7 @@ const Contact = () => {
                   required
                   value={formData.service}
                   onChange={handleInputChange}
-                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 transition-all ${
+                  className={`w-full px-3 md:px-4 py-2 md:py-3 border rounded-lg focus:ring-2 transition-all text-sm md:text-base ${
                     errors.service ? 'border-red-500' : 'border-gray-300'
                   }`}
                   style={{
@@ -358,16 +358,16 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
                   Mensaje *
                 </label>
                 <textarea
                   name="message"
                   required
-                  rows={4}
+                  rows={3}
                   value={formData.message}
                   onChange={handleInputChange}
-                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 transition-all resize-none ${
+                  className={`w-full px-3 md:px-4 py-2 md:py-3 border rounded-lg focus:ring-2 transition-all resize-none text-sm md:text-base ${
                     errors.message ? 'border-red-500' : 'border-gray-300'
                   }`}
                   style={{
@@ -392,7 +392,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center group ${
+                className={`w-full py-3 md:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center group text-sm md:text-base ${
                   isSubmitting
                     ? 'bg-gray-400 cursor-not-allowed'
                     : 'text-white hover:bg-red-900'
@@ -403,13 +403,13 @@ const Contact = () => {
               >
                 {isSubmitting ? (
                   <>
-                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                    <div className="animate-spin rounded-full h-4 md:h-5 w-4 md:w-5 border-b-2 border-white mr-2"></div>
                     Enviando...
                   </>
                 ) : (
                   <>
                     Enviar Solicitud
-                    <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    <Send className="ml-2 h-4 md:h-5 w-4 md:w-5 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
               </button>
